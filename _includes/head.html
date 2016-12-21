@@ -1,0 +1,57 @@
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>
+    {% if page.title == "Home" %}
+      {{ site.title }} &middot; {{ site.tagline }}
+    {% else %}
+      {{ page.title }} &middot; {{ site.title }}
+    {% endif %}
+  </title>
+
+  {% if page.category == 'blog' %}
+  <meta name="author" content="{{ site.author.name }}">
+  {% endif %}
+  {% if page.title == "Home" %}
+  <meta name="description" content="{{ site.description }}">
+  {% elsif page.lead %}
+  <meta name="description" content="{{ page.lead }}">
+  {% elsif page.url contains "/blog/" %}
+  <meta name="description" content="{{ page.excerpt | strip_html | strip_newlines | xml_escape }}">
+  {% else %}
+  <meta name="description" content="{{ site.description }}">
+  {% endif %}
+  <meta name="google-site-verification" content="zXPHGyXggG0IRVPXhgo7AuPiyA4ItE4LyGtOMj7YeBk">
+
+  <meta content="{{ site.title | xml_escape }}" property="og:site_name">
+  {% if page.title %}
+  <meta content="{{ page.title | xml_escape }}" property="og:title">
+  {% else %}
+  <meta content="{{ site.title | xml_escape }}" property="og:title">
+  {% endif %}
+  {% if page.title == 'Home' %}
+  <meta content="{{ site.description | xml_escape }}" property="og:description">
+  {% elsif page.lead %}
+  <meta content="{{ page.lead | xml_escape }}" property="og:description">
+  {% elsif page.category == 'blog' %}
+  <meta content="{{ page.excerpt | strip_html | strip_newlines | truncatewords: 35, '…' | xml_escape }}" property="og:description">
+  {% else %}
+  <meta content="{{ site.description | xml_escape }}" property="og:description">
+  {% endif %}
+  {% if page.url %}
+  <meta content="{{ page.url | replace: 'index.html', '' | prepend: site.baseurl | prepend: site.url }}" property="og:url">
+  {% endif %}
+
+  <link rel="canonical" href="{{ page.url | replace: 'index.html', '' | prepend: site.baseurl | prepend: site.url }}">
+
+  <meta name="theme-color" content="#263238">
+
+  <meta name="application-name" content="{{ site.title }}">
+
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="{{ site.baseurl }}/public/apple-touch-icon-precomposed.png">
+  <link rel="shortcut icon" href="{{ site.baseurl }}/public/favicon.ico">
+
+  <link rel="stylesheet" href="{{ site.baseurl }}/styles.css">
+
+</head>

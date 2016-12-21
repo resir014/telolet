@@ -1,0 +1,25 @@
+{
+  "private": true,
+  "name": "instant-telolet",
+  "version": "1.0.0",
+  "description": "Source code for https://resir014.github.io/telolet",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/resir014/telolet.git"
+  },
+  "author": "Resi Respati <resir014@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "grunt": "grunt",
+    "test": "grunt test",
+    "serve": "grunt serve",
+    "optimise": "grunt optimise"
+  },
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-imagemin": "^1.0.0",
+    "grunt-jekyll": "^0.4.3",
+    "grunt-scss-lint": "^0.3.8",
+    "load-grunt-tasks": "^3.3.0"
+  }
+}

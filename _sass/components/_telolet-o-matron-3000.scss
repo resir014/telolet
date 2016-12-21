@@ -1,0 +1,76 @@
+// Telolet-O-Matron 3000 (TM)
+//
+// For all your telolet needs.
+
+.horn-container {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.telolet-o-matron-3000 {
+  text-align: center;
+  height: 250px;
+  padding: 10px;
+  background-color: #424242;
+  border-radius: 10px;
+  -webkit-transform: perspective(500px) rotateX(25deg);
+  -moz-transform: perspective(500px) rotateX(25deg);
+  transform: perspective(500px) rotateX(25deg);
+  background: -webkit-linear-gradient(top, #424242 0%,#373737 100%);
+}
+
+.telolet-o-matron-3000__button {
+  display: table-cell;
+  vertical-align: middle;
+  margin: auto;
+  height: 150px;
+  width: 150px;
+  border: 0;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  cursor: pointer;
+  -webkit-box-shadow: 0 30px 0 0 #af2824;
+  -moz-box-shadow: 0 30px 0 0 #af2824;
+  box-shadow: 0 30px 0 0 #af2824;
+  color: $base00;
+  background: -webkit-linear-gradient(top, #d9534f 0%,#d83e3a 100%);
+  outline: 0;
+
+  &:hover {
+    margin-top: 5px;
+    -webkit-transition: 0.1s;
+    transition: 0.1s;
+    box-shadow: 0 25px 0 0 #af2824;
+    background: -webkit-linear-gradient(top, #d83e3a 0%,#d9534f 100%);
+
+  }
+
+  &:active {
+    margin-top: 10px;
+    -webkit-transition: 0.2s;
+    transition: 0.2s;
+    box-shadow: 0 20px 0 0 #991b17;
+    background: -webkit-linear-gradient(top, #c92520 0%,#d9534f 100%);
+  }
+}
+
+.kotaktelolet {
+  height: 250px;
+  padding: 10px;
+  background-color: #424242;
+  border-radius: 10px;
+  -webkit-transform: perspective(500px) rotateX(25deg);
+  -moz-transform: perspective(500px) rotateX(25deg);
+  transform: perspective(500px) rotateX(25deg);
+  background: -webkit-linear-gradient(top, #424242 0%,#373737 100%);
+}
+
+// i had to do this bcs the box shadow 3d effect will look weird if rotated
+.base {
+  height: 50px;
+  background-color: #282828;
+  background: -webkit-linear-gradient(top, #282828 0%,#232323 100%);
+  border-radius: 10px;
+  margin: -10px -5%;
+}

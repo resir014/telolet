@@ -1,0 +1,16 @@
+{
+  "editor.tabSize": 2,
+  "editor.insertSpaces": true,
+  "editor.renderWhitespace": true,
+  "files.encoding": "utf8",
+  "files.trimTrailingWhitespace": true,
+  "files.insertFinalNewline": true,
+  "search.exclude": {
+    "_drafts/**": true,
+    "_etc/**": true,
+    "_posts/**": true,
+    "_projects/**": true,
+    "_site/**": true,
+    ".sass-cache/**": true
+  }
+}

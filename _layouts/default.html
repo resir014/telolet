@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+
+  {% include head.html %}
+
+  <body>
+
+    <div class="wrapper">
+      <div class="wrapper-inner">
+        <div class="loading-mask" id="loading-mask">
+          <div class="loading-mask__text">
+            loading...
+          </div>
+        </div>
+
+        <div class="cover-container content">
+          <header class="masthead">
+            <div class="inner cover">
+              <h1>Instant Telolet</h1>
+              <p>Sekarang kamu bisa telolet di rumah!</p>
+            </div>
+          </header>
+
+          <main>
+            <div class="inner horn-container">
+              {{ content }}
+            </div>
+          </main>
+
+          <footer class="footer">
+            <small>
+              Website ini dibuat oleh <a href="https://twitter.com/resir014" target="_blank">@resir014</a> dan <a href="https://twitter.com/stalkerchann" target="_blank">@stalkerchann</a>. Source code tersedia <a href="https://github.com/resir014/telolet" target="_blank">di sini</a>.
+            </small>
+          </footer>
+        </div>
+      </div>
+    </div>
+
+    {% include scripts.html %}
+  </body>
+</html>

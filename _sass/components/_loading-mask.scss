@@ -1,0 +1,21 @@
+// Loading mask
+//
+// Displayed when the page is loading.
+
+.loading-mask {
+  background-color: $body-bg;
+  height: 100%;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 9999;
+}
+
+.loading-mask__text {
+  display: flex;
+  height: 100%;
+  padding: 3rem;
+  align-items: center;
+  justify-content: center;
+}
