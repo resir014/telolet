@@ -43,7 +43,11 @@
     transition: 0.1s;
     box-shadow: 0 25px 0 0 #af2824;
     background: -webkit-linear-gradient(top, #d83e3a 0%,#d9534f 100%);
+  }
 
+  &:focus {
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    -webkit-touch-callout: none;
   }
 
   &:active {
@@ -54,18 +58,6 @@
     background: -webkit-linear-gradient(top, #c92520 0%,#d9534f 100%);
   }
 }
-
-.kotaktelolet {
-  height: 250px;
-  padding: 10px;
-  background-color: #424242;
-  border-radius: 10px;
-  -webkit-transform: perspective(500px) rotateX(25deg);
-  -moz-transform: perspective(500px) rotateX(25deg);
-  transform: perspective(500px) rotateX(25deg);
-  background: -webkit-linear-gradient(top, #424242 0%,#373737 100%);
-}
-
 // i had to do this bcs the box shadow 3d effect will look weird if rotated
 .base {
   height: 50px;
