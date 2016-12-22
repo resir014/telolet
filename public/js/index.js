@@ -4,23 +4,23 @@
 
   // splash screen
   window.onload = function () {
-    document.getElementById('loading-mask').style.display = 'none';
+    document.getElementById('loading-mask').style.display = 'none'
   }
 
   var button = document.getElementById('telolet')
   var audioArray = document.querySelectorAll('#telolet-audio')
-  var buttonLocked = false;
+  var buttonLocked = false
 
   button.addEventListener('click', function () {
     if (buttonLocked) return false
 
-    buttonLocked = true;
+    buttonLocked = true
 
     var audio = randomize(audioArray)
     audio.play()
 
     audio.addEventListener('ended', function () {
-      buttonLocked = false;
+      buttonLocked = false
     })
   })
 
