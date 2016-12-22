@@ -2,7 +2,9 @@ header {
   text-align: center;
 
   h1 {
-    margin-top: 0;
+    @media (min-width: $large-breakpoint) {
+      margin-top: 0;
+    }
   }
 
   p {
